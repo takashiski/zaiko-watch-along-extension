@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../favicon.ico" id="favicon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zaiko再生位置表示</title>
+    <link rel="stylesheet" href="windows.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    <div id="textElement"></div>
+    <hr>
+    注意事項・使い方は下にあります。<br>
+    <label>背景色</label><input type="color" name="" id="backgroundColor" value="#00ff00"><br>
+    <label>文字色</label><input type="color" name="" id="textColor" value="#212529"><br>
+    <label>フォントサイズ</label><input type="number" name="" id="fontSize" value="50"><br>
+    <hr>
+    ※このウィンドウを完全に隠すと時間が更新されません。<br>
+    <hr>
+    <ol>
+        <li>OBSのウィンドウキャプチャでこのウィンドウを読み込む</li>
+        <li>プロパティの「カーソル領域」のチェックを外す</li>
+        <li>フィルター > エフェクトフィルタ > クロマキーを追加して背景透過</li>
+        <li>Altキーを押しながらキャプチャの端っこをドラッグでトリミング</li>
+        <li>キャプチャの端っこをドラッグで表示サイズを調整</li>
+    </ol>
+    <script src="window.js"></script>
+</body>
+
+</html>

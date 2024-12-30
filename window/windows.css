@@ -1,0 +1,15 @@
+body{
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #212529;
+    background-color: #EEEEEE;
+    /* -webkit-text-stroke: 0.1px #212529; */
+}
+
+div#textElement{
+    font-size: xxx-large;
+    margin:0.5rem;
+    padding:1.5rem;
+    color: #212529;
+    background-color: #00FF00;
+}
