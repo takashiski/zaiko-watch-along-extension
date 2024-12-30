@@ -44,6 +44,23 @@ body.addEventListener("paste", (e) => {
     video.currentTime = currentTime;
 });
 
+//Dキーを押したとき、再生位置を5秒進める
+//Aキーを押したとき、再生位置を5秒戻す
+body.addEventListener("keydown", async (e) => {
+    console.log(e.key);
+    console.log(timeText.textContent);
+    if (e.key === "d") {
+        setTime(convertHHMMSSToSec(timeText.textContent) + 1);
+    }
+    if (e.key === "a") {
+        setTime(convertHHMMSSToSec(timeText.textContent) - 1);
+    }
+});
+
+function setTime(time){
+    video.currentTime = time;
+}
+
 function convertHHMMSSToSec(hhmmss) {
     const splited = hhmmss.split(" ")[0].split(":");
     let currentTime = 0;
